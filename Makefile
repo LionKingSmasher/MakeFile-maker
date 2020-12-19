@@ -1,8 +1,8 @@
 CC = g++
 FLAGS = -std=c++1z -Wall
 OUTPUT = start
-OBJECT =  test.o
-$(OUTPUT): $(OBJECT)
+CCOBJECT = test.o
+$(OUTPUT): $(CCOBJECT)
 	$(CC) $(FLAGS) -o $@ $^
 
 clean:
