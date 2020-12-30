@@ -1,5 +1,6 @@
 <?php
-function getDIR(){
+
+function getDIR_() {
     $file_path = realpath(__FILE__);
     $real_path = str_replace(basename(__FILE__), '', $file_path); //basename: 파일만 기져옴
     return $real_path;
@@ -48,7 +49,7 @@ $Makefile_array = array( //MakeFile에 필수로 들어가야하는 매크로 �
 );
 
 if($MF){
-    $cur_dir = getDIR(); # 파일이 있는 디렉토리 가져오기
+    $cur_dir = getDIR_(); # 파일이 있는 디렉토리 가져오기
 
     ################## 디렉토리 핸들 선정 ###################
     $handle = opendir($cur_dir); 
